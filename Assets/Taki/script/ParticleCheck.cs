@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ParticleCheck : MonoBehaviour
 {
@@ -27,6 +28,9 @@ public class ParticleCheck : MonoBehaviour
         {
             //Debug.Log("衝突");
             particle.Pause();
+
+            //テスト用
+            SceneManager.LoadScene("ResultScene");
   
         }
 

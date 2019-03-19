@@ -25,7 +25,7 @@ public class ParticleCheck : MonoBehaviour
 
         if (obj.tag == "Goal")
         {
-            Debug.Log("衝突");
+            //Debug.Log("衝突");
             particle.Pause();
   
         }

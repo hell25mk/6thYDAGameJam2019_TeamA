@@ -41,6 +41,12 @@ public class SceneMove : MonoBehaviour
         Debug.Log(sceneList[(int)moveToScene] + "に移動");
 
     }
+
+    public void GoToScene() {
+
+        SceneManager.LoadScene(sceneList[(int)moveToScene]);
+
+    }
     
     
 

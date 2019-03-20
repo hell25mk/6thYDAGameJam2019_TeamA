@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class Fade : MonoBehaviour
 {
     [SerializeField]
     public GameObject imageObject;
-
-    
 
     private float alphaValue;
     // Start is called before the first frame update

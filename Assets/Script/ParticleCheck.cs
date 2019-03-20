@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class ParticleCheck : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject switchObject;
     private ParticleSystem particle;
-
 
     // Start is called before the first frame update
     void Start()
@@ -28,10 +29,7 @@ public class ParticleCheck : MonoBehaviour
         {
             //Debug.Log("衝突");
             particle.Pause();
-
-            //テスト用
-            SceneManager.LoadScene("ResultScene");
-  
+            switchObject.GetComponent<SwitchObject>().IsColorChange = true;
         }
 
     }

@@ -36,6 +36,7 @@ public class SceneMove : MonoBehaviour
     public void OnClick() {
 
         SceneManager.LoadScene(sceneList[(int)moveToScene]);
+        Debug.Log(sceneList[(int)moveToScene] + "に移動");
 
     }
     

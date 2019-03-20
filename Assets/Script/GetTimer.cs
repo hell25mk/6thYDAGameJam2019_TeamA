@@ -32,7 +32,7 @@ public class GetTimer : MonoBehaviour
 
         if (seconds > 0)
         {
-            TimerText.text = seconds.ToString("F2");//残りタイム表示
+            TimerText.text = "光が到達するまで\nあと" + seconds.ToString( "F2") + "秒";//残りタイム表示
             //countTime += Time.deltaTime;// カウントアップ
             countTime -= Time.deltaTime; // カウントダウン
             seconds = countTime;

@@ -8,6 +8,7 @@ public class SceneMove : MonoBehaviour
 
     public enum SceneType {
         Scene_Title = 0,
+        Scene_Tutorial,
         Scene_Game,
         Scene_Result,
     }
@@ -17,6 +18,7 @@ public class SceneMove : MonoBehaviour
 
     private List<string> sceneList = new List<string>{
         "TitleScene",
+        "TutorialScene",
         "GameScene",
         "ResultScene",
     };

@@ -592,5 +592,6 @@ PrefabInstance:
       propertyPath: m_FillCenter
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 388460611484788539, guid: 6f592989c66ec334eba7c2e88d407bd8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6f592989c66ec334eba7c2e88d407bd8, type: 3}

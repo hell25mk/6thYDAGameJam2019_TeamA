@@ -9,9 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleScene.unity
     guid: d37098365e481d3439002dcab9bf0449
   - enabled: 1
-    path: Assets/Nagashima/Scene/GameScene.unity
+    path: Assets/Scenes/TutorialScene.unity
+    guid: e41b3f6ede764aa468ae6fcf95799f3f
+  - enabled: 1
+    path: Assets/Scenes/GameScene.unity
     guid: f004cd0420842064e98003deead7d39b
   - enabled: 1
-    path: Assets/Nagashima/Scene/ResultScene.unity
+    path: Assets/Scenes/ResultScene.unity
     guid: aa0be225bfcf035459acdf8bcf471b8c
   m_configObjects: {}

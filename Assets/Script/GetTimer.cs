@@ -30,7 +30,7 @@ public class GetTimer : MonoBehaviour
     void Update()
     {
 
-        if (seconds >= 0)
+        if (seconds > 0)
         {
             TimerText.text = seconds.ToString("F2");//残りタイム表示
             //countTime += Time.deltaTime;// カウントアップ
@@ -40,14 +40,18 @@ public class GetTimer : MonoBehaviour
             if (seconds <= 0)
             {
                 seconds = 0.00;//値がマイナスになるため0.00を入れる
-                tval.CheckText();//呼び出してtrue(表示)にする
+                //tval.CheckTextT();//呼び出してtrue(表示)にする
+                TimerText.GetComponent<Text>().enabled = false;
             }
         }
-        else
+       /* else
         {
-            TimerText.text = seconds.ToString("F2");//残りタイム表示
-            
-        }
+            if(countTime > 3)
+            {
+                countTime += Time.deltaTime;// カウントアップ
+                tval.CheckTextF();//呼び出してtrue(非表示)にする
+            }
+        }*/
     }
 
 }

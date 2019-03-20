@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Wave : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject waveObject;
 
     private float minPosition;
     private float maxPosition;
@@ -21,14 +23,14 @@ public class Wave : MonoBehaviour
     void Update()
     {
         if(waveDire) {
-            this.transform.position = new Vector3(-1.0f, 0.0f);
+            waveObject.transform.position = new Vector3(-1.0f, 0.0f);
         } else {
-            this.transform.position = new Vector3(1.0f, 0.0f);
+            waveObject.transform.position = new Vector3(1.0f, 0.0f);
         }
 
-        if(this.transform.position.x > maxPosition) {
+        if(waveObject.transform.position.x > maxPosition) {
             waveDire = !waveDire;
-        } else if(this.transform.position.x < minPosition){
+        } else if(waveObject.transform.position.x < minPosition){
             waveDire = !waveDire;
         }
 

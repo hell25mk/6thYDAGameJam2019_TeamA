@@ -36,6 +36,7 @@ public class Timer : MonoBehaviour
         else
         {
             TimerText.text = seconds.ToString("F2");//残りタイム表示
+
         }
     }
 

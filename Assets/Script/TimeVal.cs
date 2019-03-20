@@ -21,8 +21,12 @@ public class TimeVal : MonoBehaviour
      
     }
 
-    public void CheckText()
+    public void CheckTextT()
     {
         CText.GetComponent<Text>().enabled = true;//表示
+    }
+
+    public void CheckTextF() {
+        CText.GetComponent<Text>().enabled = false;//非表示
     }
 }
